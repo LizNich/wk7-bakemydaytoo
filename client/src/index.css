@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  font-family: calibri;
+}
+:root {
+  --primary-color: #c9426b;
+  --secondary-color: #ffb0b9;
+  --accent-color: #a87a64;
+  --highlight-color: #ffddc8;
+  --block-color: #3c140f;
+}
+body {
+  height: 100vh;
+  /*margin-left: 5%;*/
+  /*color: var(--primary-color);*/
+  background-image: url(assets/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 5vw;
+  color: var(--block-color);
+  /*margin-left: 10%;*/
+  text-align: center;
+  font-style: oblique;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2em;
+  color: var(--block-color);
+}
+
+h2 {
+  color: grey;
+}
+
+h4 {
+  font-style: oblique;
+  text-emphasis: circle var(--accent-color);
+  background-color: var(--highlight-color);
+}
+
+.cake-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cake-item {
+  background-color: var(--highlight-color);
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 5px var(--block-color);
+  line-height: 1em;
+}
+
+a {
+  color: rgb(255, 0, 183); /* Default color */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Example: makes text bold */
+}
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.link-container {
+  background-color: var(--primary-color);
+  color: var(--highlight-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  z-index: 1000;
+  height: 6vh;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: 0.75em;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+footer {
+  color: var(--highlight-color);
+  width: 100%;
+  z-index: 1000;
+  height: 6vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75em;
+  margin-top: 10px;
+}
