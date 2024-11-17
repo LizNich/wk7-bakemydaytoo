@@ -1,7 +1,3 @@
-// "http://localhost:8080/cakes";
-// "https://watchtv-wk4-assignment-server.onrender.com/cakes";
-// Make sure urls match
-
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./components/HomePage";
@@ -12,7 +8,9 @@ export default function App() {
 
   useEffect(() => {
     async function getCakes() {
-      const response = await fetch("http://localhost:8080/cakes");
+      const response = await fetch(
+        "https://wk7-bakemydaytoo-server.onrender.com/cakes"
+      );
       const data = await response.json();
       setCakes(data);
       console.log(data);
@@ -34,7 +32,6 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/form" element={<FormPage />} />
         </Routes>
-        <footer>Copyright 2024</footer>
       </main>
     </BrowserRouter>
   );

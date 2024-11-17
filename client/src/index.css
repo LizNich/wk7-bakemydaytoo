@@ -11,19 +11,18 @@
 }
 body {
   height: 100vh;
-  /*margin-left: 5%;*/
-  /*color: var(--primary-color);*/
   background-image: url(assets/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 6vw;
   color: var(--block-color);
-  /*margin-left: 10%;*/
   text-align: center;
   font-style: oblique;
   margin: 0;
@@ -46,10 +45,24 @@ h4 {
   background-color: var(--highlight-color);
 }
 
+.cake-introduction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  line-height: 1.5em;
+  background-color: var(--accent-color);
+  padding: 5px;
+  margin-top: 1%;
+  box-shadow: 0 2px 5px var(--block-color);
+  color: var(--highlight-color);
+  border-radius: 10px;
+}
+
 .cake-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  margin-top: 2%;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -60,12 +73,13 @@ h4 {
   width: 200px;
   box-shadow: 0 2px 5px var(--block-color);
   line-height: 1em;
+  border-radius: 50% 20% / 10% 30%;
 }
 
 a {
-  color: rgb(255, 0, 183); /* Default color */
-  text-decoration: none; /* Removes underline */
-  font-weight: bold; /* Example: makes text bold */
+  color: var(--highlight-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 a:hover {
   color: orange;
@@ -84,7 +98,7 @@ a:hover {
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  font-size: 0.75em;
+  font-size: 1em;
   margin-top: 10px;
   padding: 20px;
 }
@@ -101,4 +115,71 @@ footer {
   justify-content: center;
   font-size: 0.75em;
   margin-top: 10px;
+  position: sticky;
+}
+
+/*FormPage*/
+.container {
+  display: flex;
+  align-items: Top;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.box-text {
+  width: 40%;
+  height: 400px;
+  background-color: var(--highlight-color);
+  display: flex;
+  align-items: center;
+  line-height: 1.5em;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 0 2px 5px var(--block-color);
+  border-radius: 10px;
+}
+
+.box-form {
+  width: 40%;
+  height: 400px;
+  background-color: var(--highlight-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5em;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 0 2px 5px var(--block-color);
+  border-radius: 10px;
+}
+
+input {
+  width: 90%;
+  margin-bottom: 2%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 1vw;
+}
+
+button {
+  cursor: pointer;
+  padding: 6px 20px;
+  background-color: grey;
+  font-size: 1vw;
+  margin-top: 5px;
+  color: white;
+  width: 90%;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 600px) {
+  .box {
+    height: 100px;
+  }
 }
