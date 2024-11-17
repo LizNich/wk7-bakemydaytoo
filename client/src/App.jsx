@@ -1,3 +1,7 @@
+// "http://localhost:8080/cakes";
+// "https://watchtv-wk4-assignment-server.onrender.com/cakes";
+// Make sure urls match
+
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./components/HomePage";
